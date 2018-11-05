@@ -1,8 +1,7 @@
 import unittest
-
 import rpn
-
 import readline
+import colored
 from colored import fg, bg, attr, fore, back, style
 
 class TestBasics(unittest.TestCase):
