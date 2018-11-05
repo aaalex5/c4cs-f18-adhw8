@@ -18,3 +18,6 @@ class TestBasics(unittest.TestCase):
     def test_expo(self):
         result = rpn.calculate("5 2 ^")
         self.assertEqual(25, result)
+    def test_modulo(self):
+        result = rpn.calculate("7 5 %")
+        self.assertEqual(2, result)
