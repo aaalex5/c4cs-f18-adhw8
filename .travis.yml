@@ -1,9 +1,11 @@
 language: python
 python:
         - "3.6"
+install:
+        - pip3 install python-coveralls
+        - pip3 install coverage
 script:
-        - pytest
-        - coverage run
+        - coverage run test_rpn.py
         - coverage report -m
 after_success:
         - coveralls
