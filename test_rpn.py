@@ -2,6 +2,9 @@ import unittest
 
 import rpn
 
+import readline
+from colored import fg, bg, attr, fore, back, style
+
 class TestBasics(unittest.TestCase):
     def test_add(self):
         result = rpn.calculate("1 1 +")
