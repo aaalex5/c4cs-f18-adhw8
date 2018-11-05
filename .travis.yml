@@ -3,5 +3,7 @@ python:
         - "3.6"
 script:
         - pytest
+        - coverage run
+        - coverage report -m
 after_success:
         - coveralls
